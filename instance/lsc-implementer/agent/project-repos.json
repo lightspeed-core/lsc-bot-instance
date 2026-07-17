@@ -1,0 +1,26 @@
+{
+  "lightspeed-core/lightspeed-stack": {
+    "url": "https://github.com/platex-rehor-bot/lightspeed-stack.git",
+    "upstream": "https://github.com/lightspeed-core/lightspeed-stack.git"
+  },
+  "lightspeed-core/lightspeed-providers": {
+    "url": "https://github.com/platex-rehor-bot/lightspeed-providers.git",
+    "upstream": "https://github.com/lightspeed-core/lightspeed-providers.git"
+  },
+  "lightspeed-core/lightspeed-evaluation": {
+    "url": "https://github.com/platex-rehor-bot/lightspeed-evaluation.git",
+    "upstream": "https://github.com/lightspeed-core/lightspeed-evaluation.git"
+  },
+  "lightspeed-core/rag-content": {
+    "url": "https://github.com/platex-rehor-bot/rag-content.git",
+    "upstream": "https://github.com/lightspeed-core/rag-content.git"
+  },
+  "lightspeed-core/llama-stack-runner": {
+    "url": "https://github.com/platex-rehor-bot/llama-stack-runner.git",
+    "upstream": "https://github.com/lightspeed-core/llama-stack-runner.git"
+  },
+  "lightspeed-core/lightspeed-to-dataverse-exporter": {
+    "url": "https://github.com/platex-rehor-bot/lightspeed-to-dataverse-exporter.git",
+    "upstream": "https://github.com/lightspeed-core/lightspeed-to-dataverse-exporter.git"
+  }
+}

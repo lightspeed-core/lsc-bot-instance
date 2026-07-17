@@ -1,4 +1,4 @@
-workflow: cve
+workflow: jira-kanban
 source: jira
 envs:
   - slack

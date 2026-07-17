@@ -1,0 +1,9 @@
+# TODO: custom workflow — details TBD
+# This instance will gather CVEs and create Jira tickets.
+# For now, placeholder config.
+workflow: jira-sprint
+source: jira
+envs:
+  - slack
+claude_md:
+  strategy: append
