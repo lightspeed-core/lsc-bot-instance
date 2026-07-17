@@ -1,4 +1,4 @@
-workflow: cve
+workflow: jira-sprint
 source: jira
 envs:
   - slack
