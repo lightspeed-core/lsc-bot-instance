@@ -2,7 +2,7 @@
 
 ## Focus
 
-This instance picks up Vulnerability tickets from the LCORE Jira board and implements fixes across Lightspeed Core repositories.
+This instance picks up Vulnerability tickets from the LCORE Jira board and implements fixes across Lightspeed Core Python repositories.
 
 ## Jira
 
@@ -26,9 +26,7 @@ Other images → check Dockerfiles in the matching repos. When unsure, search ac
 
 ## Tech Stack
 
-All repos are **Python** except `lightspeed-reference-ui` (TypeScript).
-
-### Python repos
+All repos are **Python**.
 
 - Package manager: `pip` with `requirements.txt` / `Pipfile` / `pyproject.toml`
 - Linting/formatting: check each repo for `ruff`, `black`, `flake8`, `mypy` config
@@ -42,8 +40,3 @@ All repos are **Python** except `lightspeed-reference-ui` (TypeScript).
 3. Bump to the fixed version (mentioned in the CVE description or check PyPI)
 4. Run tests to verify nothing breaks
 5. Check if other repos in this org are affected by the same CVE (same `pscomponent` prefix)
-
-### TypeScript repo (lightspeed-reference-ui)
-
-- Uses `npm` / `yarn` — check `package.json`
-- Standard Node.js CVE fix: `npm audit fix` or manual version bump in `package.json`

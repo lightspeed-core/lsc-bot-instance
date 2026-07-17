@@ -7,10 +7,6 @@
     "url": "https://github.com/platex-rehor-bot/lightspeed-providers.git",
     "upstream": "https://github.com/lightspeed-core/lightspeed-providers.git"
   },
-  "lightspeed-core/lightspeed-ui": {
-    "url": "https://github.com/platex-rehor-bot/lightspeed-ui.git",
-    "upstream": "https://github.com/lightspeed-core/lightspeed-ui.git"
-  },
   "lightspeed-core/lightspeed-evaluation": {
     "url": "https://github.com/platex-rehor-bot/lightspeed-evaluation.git",
     "upstream": "https://github.com/lightspeed-core/lightspeed-evaluation.git"
@@ -26,9 +22,5 @@
   "lightspeed-core/lightspeed-to-dataverse-exporter": {
     "url": "https://github.com/platex-rehor-bot/lightspeed-to-dataverse-exporter.git",
     "upstream": "https://github.com/lightspeed-core/lightspeed-to-dataverse-exporter.git"
-  },
-  "lightspeed-core/lightspeed-reference-ui": {
-    "url": "https://github.com/platex-rehor-bot/lightspeed-reference-ui.git",
-    "upstream": "https://github.com/lightspeed-core/lightspeed-reference-ui.git"
   }
 }
