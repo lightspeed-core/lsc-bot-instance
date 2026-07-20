@@ -35,6 +35,8 @@ parameters:
   required: true
 - name: VERTEX_ALLOWED_MODELS
   required: true
+- name: BOT_JIRA_PROJECT
+  required: true
 - name: SLACK_WEBHOOK_URL
   value: ""
 objects:
@@ -151,6 +153,8 @@ objects:
             value: ${BOT_CONFIG_REPO}
           - name: BOT_CONFIG_PATH
             value: ${BOT_CONFIG_PATH}
+          - name: BOT_JIRA_PROJECT
+            value: ${BOT_JIRA_PROJECT}
           - name: BOT_DASHBOARD_URL
             value: http://devbot-memory-server:8080/api/bot-status
           - name: COSTS_API_URL
