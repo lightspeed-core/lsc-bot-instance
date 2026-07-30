@@ -51,6 +51,8 @@ All repos are **Python**.
         Then STOP — move ticket back to New/unassigned once index is updated.
 
 **Only if version is present in all applicable indexes:**
-4. Bump to the fixed version (mentioned in the CVE description or check PyPI)
-5. Run tests to verify nothing breaks
-6. Check if other repos in this org are affected by the same CVE (same `pscomponent` prefix)
+4. Bump the version:
+   - **`pyproject.toml`**: raise the `>=` floor to the fixed version. This is the normal CVE bump for direct dependencies.
+   - **`.konflux/requirements.overrides.txt`** (and `.cuda.txt` for rag-content): only if a `<` cap on this package exists that blocks the target version — raise or remove the cap. Overrides are version ceilings used when a newer version has transitive deps not yet on the RHOAI index.
+5. **Regenerate lockfiles**: `python3 scripts/konflux_resolve.py --profile cpu && uv lock`. For rag-content also run `--profile cuda`.
+6. **Verify resolution**: confirm the bumped package resolved from the RHOAI index (`# from https://packages.redhat.com/...` annotations), not raw PyPI. For rag-content, verify both CPU and CUDA resolved the same target version. If new packages resolved from PyPI that previously didn't → `jira_add_comment` explaining which packages fell through, then STOP. This requires manual intervention (overrides, Tekton pipeline updates, or RHOAI onboarding).
